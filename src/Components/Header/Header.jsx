@@ -30,8 +30,8 @@ function Header() {
                 <SlLocationPin />
               </span>
               <div className={headerStyle.order_span}>
-                <span style={{ fontSize: "16px" }}>Delivered to</span>
-                <span> Ethiopia</span>
+                <span style={{ fontSize: "15px" }}>Delivered to</span>
+                <span> Denver</span>
               </div>
             </div>
           </div>
