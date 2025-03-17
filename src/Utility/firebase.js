@@ -1,29 +1,21 @@
-// older/Legacy (Compat) Firebase SDK
-// import firebase from "firebase/compat/app";
-// import "firebase/compat/auth"
-// import "firebase/compat/firestore"
-
-// Modular Firebase SDK setup
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-// Auth
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
+
 // Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCYyBMnDKmzF3yKUFM8qxEQ-X4SmxSj2dY",
-  authDomain: "clone-398a2.firebaseapp.com",
-  projectId: "clone-398a2",
-  storageBucket: "clone-398a2.firebasestorage.app",
-  messagingSenderId: "764399763271",
-  appId: "1:764399763271:web:f2b6f719636a4fbc64d662",
+  apiKey: "AIzaSyDWWKV_hTAGKQvRDo6O1yBOGyZ24FGmeXc",
+  authDomain: "clone-467ac.firebaseapp.com",
+  projectId: "clone-467ac",
+  storageBucket: "clone-467ac.firebasestorage.app",
+  messagingSenderId: "642095981525",
+  appId: "1:642095981525:web:2f5bfb4ebdbc5be870135c",
+  measurementId: "G-1VRCGBBKR3",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Older SDK
-// export const db = app.firestore();
-
-// Initialize Authentication and Firestore using the Modular SDK
 export const auth = getAuth(app);
 export const db = getFirestore(app);
